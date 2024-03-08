@@ -43,4 +43,4 @@ In particolare:
 ### Stanislav Tryfenko
 # Milestone 6
 Lavoriamo alla colonna QUANTITY. 
-- Facciamo in modo che nella colonna sia presente un input numerico disabilitato, con a fianco i pulsanti - e + per incrementare la quantità del prodotto. Per ora ignoriamo la parte JS.
+-Facciamo in modo che nella colonna sia presente un input numerico disabilitato, con a fianco i pulsanti - e + per incrementare la quantità del prodotto. Per ora ignoriamo la parte JS.
