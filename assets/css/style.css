@@ -1,9 +1,9 @@
 :root{
-    --bg-primary-: #e5e6ea;
-    --bg-secondary-: #fefeff;
-    --bg-summary-: #f5f4f7;
-    --text-primary: #020203;
-    --text-secondary: #636262;
+    --bg-primary: #e5e6ea;
+    --bg-lighter: #fefeff;
+    --bg-summary: #f5f4f7;
+    --text-darker: #020203;
+    --text-dark: #636262;
     --button-danger: #fa7272;
     --button-ckeckout: #5d50dd;
     --summary-w: 740px;
@@ -21,7 +21,44 @@
 }
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+
 
 body{
-    background-color: antiquewhite;
+    background-color: var(--bg-primary) ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.container{
+    width: var(--container--w);
+    height: 90%; 
+    display: flex;
+    
+
+    .left {
+        background-color: var(--bg-lighter);
+        width: calc((100% / 12) * 8);
+        height: 100%;
+    }
+
+    .right {
+        background-color: var(--bg-summary);
+        width: calc((100% / 12) * 4);
+        height: 100%;
+
+    }
+}
+
+/* Debug */
+
+
+
+
