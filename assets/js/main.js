@@ -3,40 +3,28 @@ console.log('It works');
 const products = [
     {
         image: 'burger.png',
-        name: 'burger',
+        name: 'Burger',
         quantity: 1,
         price: 8.50,
     },
     {
-        image: 'burger.png',
-        name: 'burger',
+        image: 'french fries.png',
+        name: 'French Fries',
         quantity: 2,
-        price: 8.50,
+        price: 5.50,
     },
     {
-        image: 'burger.png',
-        name: 'burger',
+        image: 'kebab.png',
+        name: 'Kebab',
         quantity: 3,
-        price: 8.50,
+        price: 7.00,
     },
     {
-        image: 'burger.png',
-        name: 'burger',
+        image: 'pizza.png',
+        name: 'Pizza',
         quantity: 1,
-        price: 8.50,
-    },
-    {
-        image: 'burger.png',
-        name: 'burger',
-        quantity: 1,
-        price: 8.50,
-    },
-    {
-        image: 'burger.png',
-        name: 'burger',
-        quantity: 1,
-        price: 8.50,
-    },
+        price: 10.00,
+    }
 ];
 console.log(products);
 
