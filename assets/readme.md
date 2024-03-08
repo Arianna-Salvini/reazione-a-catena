@@ -37,3 +37,10 @@ In particolare:
 - Impostiamo l’HTML e il CSS della tabella dei prodotti. 
 - Creiamo l’intestazione della tabella e una riga di esempio, stampando un’immagine e dei dati statici. 
 - Lasciamo vuota per ora la colonna QUANTITY.
+
+
+### Mutti Matteo
+### Stanislav Tryfenko
+# Milestone 6
+Lavoriamo alla colonna QUANTITY. 
+- Facciamo in modo che nella colonna sia presente un input numerico disabilitato, con a fianco i pulsanti - e + per incrementare la quantità del prodotto. Per ora ignoriamo la parte JS.

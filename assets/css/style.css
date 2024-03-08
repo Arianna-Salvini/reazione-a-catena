@@ -92,7 +92,29 @@ table{
         width: 100px;
         height: 100px;
     }
+
+    & .quantity_button{
+
+        border: none;
+        background-color: var(--bg-lighter);
+
+        
+    }
+
+    & .quantity_input{
+
+        width: 2rem;
+        aspect-ratio: 1;
+        margin: 0 0.5rem;
+        text-align: center;
+        
+       
+
+        
+
+    }
 }
+
 
 
 
