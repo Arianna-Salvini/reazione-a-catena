@@ -9,3 +9,16 @@ Arianna Salvini -->
 ## Milestone 2
 - Impostiamo il macro layout. 
 - Facciamo in modo che vengano affiancati i due box con la giusta proporzione nella larghezza e con la giusta centratura rispetto alla viewport.
+
+
+
+### Giorgia Mancini
+### Simone Nolberto
+## Milestone 3
+- Osservando il layout ragioniamo su come impostare i nostri dati per mostrarli all’utente.
+- Proviamo a creare un oggetto che rappresenti uno dei prodotti in tabella: di quali proprietà abbiamo bisogno? che tipo di dato sono? Con quale struttura gestiamo la lista di prodotti?
+- N.B. nello scaffolding abbiamo già gli asset di riferimento (le immagini).
+
+# tools 
+- const product {img, name, price};
+
