@@ -1,3 +1,20 @@
+:root{
+    --bg-primary-: #e5e6ea;
+    --bg-secondary-: #fefeff;
+    --bg-summary-: #f5f4f7;
+    --text-primary: #020203;
+    --text-secondary: #636262;
+    --button-danger: #fa7272;
+    --button-ckeckout: #5d50dd;
+    --summary-w: 740px;
+    --container--w: 90%;
+    --padding-main: 120px;
+    --margin-fixed: 55px;
+    --divider-h: 2px;
+}
+
+
+
 body{
     background-color: antiquewhite;
 }
