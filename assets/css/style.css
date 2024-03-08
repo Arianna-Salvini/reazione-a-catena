@@ -11,6 +11,13 @@
     --padding-main: 120px;
     --margin-fixed: 55px;
     --divider-h: 2px;
+    --text-product-size: 36px;
+    --text-remove-size: 29px;
+    --text-title-tb-size: 36px;
+    --text-title-tb-weight: bold;
+    --text-title-size: 50px;
+    --text-tile-weight: bold;
+    --text-title-let-space: -1px;
 }
 
 
