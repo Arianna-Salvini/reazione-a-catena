@@ -49,7 +49,7 @@ console.log(itemElemets);
 const tableEl = document.querySelector("table > tbody");
 console.log(tableEl);
 
-
+// la funzione render stampa una riga nuova all'interno della mia table(@todo :attenzione: è ancora statica)
 function render (products){
    
     const markup = `<tr>
