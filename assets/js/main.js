@@ -37,12 +37,6 @@ console.log(itemElemets);
 const tableEl = document.querySelector("table > tbody");
 console.log(tableEl);
 
-
-
-
-
-// const 
-
 // la funzione render stampa una riga nuova all'interno della mia table(@todo :attenzione: è ancora statica)
 function render (product){
    
@@ -56,9 +50,9 @@ function render (product){
             </div>
         </td>
         <td class="textalign-center">
-            <button class="remove-button" class="quantity_button" data-name="${name}">-</button>
+            <button class="remove-button" class="quantity_button" data-name="${name}" data-quantity="${quantity}">-</button>
             <input type="number" disabled class="quantity_input" value="${quantity}">
-            <button class="add-button" class="quantity_button" data-name="${name}">+</button>
+            <button class="add-button" class="quantity_button" data-name="${name}" data-quantity="${quantity}">+</button>
         </td>
         <td class="textalign-center">${(price).toFixed(2)}€</td>
         <td class="textalign-center">${(price * quantity).toFixed(2)}€</td>
@@ -73,14 +67,27 @@ products.forEach((product) =>{
 })
 
 // variabili per accedere ai tasti + e -
-const addButton = document.querySelectorAll(".add-button");
-const removeButton = document.querySelectorAll(".remove-button");
+let addButton = document.getElementsByClassName("add-button");
+addButton = addButton.from(addButton);
+const removeButton = document.getElementsByClassName(".remove-button");
+console.log(typeof addButton);
 
 // accesso al tasto + del quantity
-addButton.forEach ((button) => {
+addButton.forIn((button, index) => {
     button.addEventListener('click', function (e) {
-        const button = e.target;
-        console.log(button.dataset.name);
+        const button = e.target; // ho selezionato il bottone sul qualche ho cliccato e l'ho salvato nel button
+        let quantity = Number(button.dataset.quantity); // salva la quantià nella variabile prendendola dal bottone renderizzato in pagina
+        quantity++; // incremento la quantità della variabile presa dal bottone 
+
+        // dobbiamo aumentare la quantità del prodotto 
+        products[index].quantity = products[index].quantity +1; // selezioniamo la quantità dell'oggetto e assegniamo il nuovo valore
+        tableEl.innerHTML = "";
+        products.forEach((product) =>{
+            render(product)
+        })
+
+        // dobbiamo aggiurnare la DOM
+        console.log(products);
     })
 });
 
@@ -91,5 +98,3 @@ removeButton.forEach ((button) => {
         console.log(button.dataset.name);
     })
 });
-
-

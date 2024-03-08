@@ -67,3 +67,8 @@ Aggiungiamo due listener ai pulsanti + e -. Facciamo in modo che al click venga 
 
 - aggiungiamo gli add event listener
 - log product.name
+
+### Francesco Berretta
+### Emanuel Moldovan
+## Milestone 10
+- Al click sul pulsante + deve essere incrementata la quantità del prodotto e che questa venga aggiornata correttamente in pagina. 
