@@ -37,6 +37,10 @@ console.log(itemElemets);
 const tableEl = document.querySelector("table > tbody");
 console.log(tableEl);
 
+
+
+
+
 // const 
 
 // la funzione render stampa una riga nuova all'interno della mia table(@todo :attenzione: è ancora statica)
@@ -52,9 +56,9 @@ function render (product){
             </div>
         </td>
         <td class="textalign-center">
-            <button class="quantity_button">-</button>
+            <button class="remove-button" class="quantity_button" data-name="${name}">-</button>
             <input type="number" disabled class="quantity_input" value="${quantity}">
-                <button class="quantity_button">+</button>
+            <button class="add-button" class="quantity_button" data-name="${name}">+</button>
         </td>
         <td class="textalign-center">${(price).toFixed(2)}€</td>
         <td class="textalign-center">${(price * quantity).toFixed(2)}€</td>
@@ -67,3 +71,25 @@ function render (product){
 products.forEach((product) =>{
     render(product)
 })
+
+// variabili per accedere ai tasti + e -
+const addButton = document.querySelectorAll(".add-button");
+const removeButton = document.querySelectorAll(".remove-button");
+
+// accesso al tasto + del quantity
+addButton.forEach ((button) => {
+    button.addEventListener('click', function (e) {
+        const button = e.target;
+        console.log(button.dataset.name);
+    })
+});
+
+// accesso al tasto - del quantity
+removeButton.forEach ((button) => {
+    button.addEventListener('click', function (e) {
+        const button = e.target;
+        console.log(button.dataset.name);
+    })
+});
+
+

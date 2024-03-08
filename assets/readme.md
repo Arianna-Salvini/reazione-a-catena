@@ -59,3 +59,11 @@ immagine corretta
 quantità corretta nell’input
 prezzo
 totale (come lo calcoliamo?)
+
+### Simone Vacca
+### Daniele Colaci
+## milestom 9
+Aggiungiamo due listener ai pulsanti + e -. Facciamo in modo che al click venga stampato (in console) il nome del prodotto della riga su cui abbiamo cliccato.
+
+- aggiungiamo gli add event listener
+- log product.name
