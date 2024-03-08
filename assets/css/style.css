@@ -66,6 +66,34 @@ body{
     padding: 2rem 0;
 }
 
+.container_bottom{
+    width: 100%;
+}
+
+.textalign-left{
+    text-align: left;
+}
+
+.textalign-center{
+    text-align: center;
+}
+
+.df{
+    display: flex;
+}
+.align-self-center{
+    align-self: center;
+}
+
+table{
+    width: 100%;
+
+    & img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 
 
 
