@@ -22,3 +22,10 @@ Arianna Salvini -->
 # tools 
 - const product {img, name, price};
 
+### Matte Mutti
+### Moldovan Emanuel
+
+## Milestone 4
+- Impostiamo gli header (titoli e linea di separazione) delle due sezioni. 
+In particolare:
+- il numero di items mostrati nella sezione di sinistra deve essere dinamico (se sto gestendo 10 prodotti deve apparire la scritta “10 items”)
